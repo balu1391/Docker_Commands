@@ -5,9 +5,7 @@ Working on Images
 1 To download a docker image 
    docker pull image_name 
 
-2 To see the list of docker images 
-  docker image ls 
-  (or) 
+2 To see the list of docker images
   docker images 
 
 3 To delete a docker image from docker host 
@@ -44,7 +42,7 @@ Working on containers
 -----------------------------
 
 10) To see the list of all running continers 
-   docker  container  ls 
+   docker  ps
 
 11) To see the list of running and stopped containers 
     docker   ps -a 
@@ -90,10 +88,11 @@ Working on containers
 24) To go into the shell of a running contianer which is moved into background 
    docker attach container_name/container id 
 
-25) To execute anycommand in a container 
-   docker exec -it container_name/container_id command
+25) To execute anycommand in a container (or) to login into the container
+   
    Eg: To launch the bash shell in a contianer 
-   docker exec -it container_name/container_id  /bin/bash 
+   
+   docker exec -it container_name/container_id  sh
 
 
 26) To create a container from a docker image  ( imp )
